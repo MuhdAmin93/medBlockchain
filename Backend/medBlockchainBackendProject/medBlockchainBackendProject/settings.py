@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-from medBlockchain.Backend.config import *
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'medBlockchainBackendProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': BASE_DIR / 'Users',
-        'USER' : "BananaAdmin",
-        'PASSWORD' : PASS_DATABASE,
-        'HOST' : '127.0.0.1',
-        'PORT' : "5432",
+        'NAME': 'Users',
+        'USER': "BananaAdmin",
+        'PASSWORD': 'brrtsdf',
+        'HOST': '127.0.0.1',
+        'PORT': "5432",
     }
 }
 
